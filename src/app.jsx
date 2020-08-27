@@ -15,15 +15,20 @@ const App = () => {
         justifyContent: 'center',
         backgroundColor: '#333',
         color: '#fff',
-        textTransform: 'uppercase',
+        // textTransform: 'uppercase',
         fontFamily: 'helvetica',
         textAlign: 'center',
       }}
     >
       <img src="/mb-logo.png" alt="My Logo" />
-      <div style={{ marginTop: -56 }}>
-        <h1 style={{ margin: 0 }}>Mark Bailey</h1>
-        <small>Javascript / React Developer</small>
+      <div style={{ marginTop: -26 }}>
+        {/* -56 */}
+        <h1 style={{ margin: 0, fontWeight: 400 }}>
+          I'm <span style={{ color: '#F44336' }}>Mark Bailey</span>, a<br />
+          <span style={{ color: '#F44336' }}>Javascript / React</span> developer
+          <br />
+          based in <span style={{ color: '#F44336' }}>Kent, UK</span>
+        </h1>
       </div>
     </div>
   );
