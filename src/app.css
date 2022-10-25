@@ -1,0 +1,117 @@
+@keyframes progress {
+  30% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 1;
+  }
+  70% {
+    opacity: 0;
+  }
+}
+
+svg #logo_shadows > path {
+  transition: all 0.2s ease-in-out;
+}
+
+svg #logo_shadows.right > path {
+  fill-opacity: 0 !important;
+}
+
+svg #logo_shadows.right > path[data-index='0'],
+svg #logo_shadows.right > path[data-index='1'],
+svg #logo_shadows.right > path[data-index='2'],
+svg #logo_shadows.right > path[data-index='3'],
+svg #logo_shadows.right > path[data-index='4'],
+svg #logo_shadows.right > path[data-index='7'],
+svg #logo_shadows.right > path[data-index='8'] {
+  fill-opacity: 0.5 !important;
+}
+
+svg #logo_shadows:not(.show) > path,
+svg:hover #logo_shadows > path {
+  fill-opacity: 0 !important;
+}
+
+svg[data-animate='true'] path {
+  opacity: 0;
+  animation: progress 6s ease-in-out infinite;
+}
+
+svg[data-animate='true'] path[data-index='0'] {
+  animation-delay: 0s;
+}
+
+svg[data-animate='true'] path[data-index='1'] {
+  animation-delay: 0.2s;
+}
+
+svg[data-animate='true'] path[data-index='2'] {
+  animation-delay: 0.4s;
+}
+
+svg[data-animate='true'] path[data-index='3'] {
+  animation-delay: 0.6s;
+}
+
+svg[data-animate='true'] path[data-index='4'] {
+  animation-delay: 0.8s;
+}
+
+svg[data-animate='true'] path[data-index='5'] {
+  animation-delay: 1s;
+}
+
+svg[data-animate='true'] path[data-index='6'] {
+  animation-delay: 1.2s;
+}
+
+svg[data-animate='true'] path[data-index='7'] {
+  animation-delay: 1.4s;
+}
+
+svg[data-animate='true'] path[data-index='8'] {
+  animation-delay: 1.6s;
+}
+
+svg[data-animate='true'] path[data-index='9'] {
+  animation-delay: 1.8s;
+}
+
+svg[data-animate='true'] path[data-index='10'] {
+  animation-delay: 2s;
+}
+
+svg[data-animate='true'] path[data-index='11'] {
+  animation-delay: 2.2s;
+}
+
+svg[data-animate='true'] path[data-index='12'] {
+  animation-delay: 2.4s;
+}
+
+svg[data-animate='true'] path[data-index='13'] {
+  animation-delay: 2.6s;
+}
+
+#root {
+  position: fixed;
+  inset: 0;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+}
+
+.app {
+  max-width: 320px;
+}
+
+.slogan {
+  color: #888;
+  text-transform: uppercase;
+}
+
+h2 {
+  text-transform: uppercase;
+}
