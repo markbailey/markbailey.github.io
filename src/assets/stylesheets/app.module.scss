@@ -10,27 +10,8 @@
   }
 }
 
-svg #logo_shadows > path {
+.logo path {
   transition: all 0.2s ease-in-out;
-}
-
-svg #logo_shadows.right > path {
-  fill-opacity: 0 !important;
-}
-
-svg #logo_shadows.right > path[data-index='0'],
-svg #logo_shadows.right > path[data-index='1'],
-svg #logo_shadows.right > path[data-index='2'],
-svg #logo_shadows.right > path[data-index='3'],
-svg #logo_shadows.right > path[data-index='4'],
-svg #logo_shadows.right > path[data-index='7'],
-svg #logo_shadows.right > path[data-index='8'] {
-  fill-opacity: 0.5 !important;
-}
-
-svg #logo_shadows:not(.show) > path,
-svg:hover #logo_shadows > path {
-  fill-opacity: 0 !important;
 }
 
 svg[data-animate='true'] path {
@@ -94,15 +75,6 @@ svg[data-animate='true'] path[data-index='13'] {
   animation-delay: 2.6s;
 }
 
-#root {
-  position: fixed;
-  inset: 0;
-  display: grid;
-  align-items: center;
-  justify-content: center;
-  padding: 1rem;
-}
-
 .app {
   max-width: 320px;
 }
@@ -112,6 +84,14 @@ svg[data-animate='true'] path[data-index='13'] {
   text-transform: uppercase;
 }
 
-h2 {
+.name {
   text-transform: uppercase;
+  font-size: 2rem;
+  text-align: center;
+  margin: 0;
+
+  > span {
+    font-weight: 400;
+    color: #888;
+  }
 }
